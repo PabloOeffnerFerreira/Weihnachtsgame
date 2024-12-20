@@ -1,10 +1,10 @@
 alert("Script wird geladen!");
 document.body.innerHTML += "<p style='color: green;'>Script läuft korrekt!</p>";
 console.log("Script erfolgreich geladen!");
-import { races } from './Game/Core/Race.js';
-import { classes } from './Game/Core/Class.js';
-import { attributes, pointsPool, increaseAttribute, decreaseAttribute } from './Game/Core/Attributes.js';
-import { validateCharacter } from './Game/Core/Validation.js';
+import { races } from './Race.js';
+import { classes } from './Class.js';
+import { attributes, pointsPool, increaseAttribute, decreaseAttribute } from './Attributes.js';
+import { validateCharacter } from './Validation.js';
 
 export const character = {
     race: null,
