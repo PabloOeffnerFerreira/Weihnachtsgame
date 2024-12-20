@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CharCreate.css">
+    <title>Charaktererstellung</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="creation-container">
+        <h1>Charaktererstellung</h1>
+        <form id="char-create-form">
+            <!-- Name Eingabe -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Gib deinen Namen ein" required>
+
+            <!-- Geschlecht Dropdown -->
+            <label for="gender">Geschlecht:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Wähle dein Geschlecht</option>
+                <option value="male">Männlich</option>
+                <option value="female">Weiblich</option>
+            </select>
+
+            <!-- Rassen Dropdown -->
+            <label for="race">Rasse:</label>
+            <select id="race" name="race" required>
+                <option value="" disabled selected>Wähle deine Rasse</option>
+            </select>
+
+            <!-- Klassen Dropdown -->
+            <label for="class">Klasse:</label>
+            <select id="class" name="class" required>
+                <option value="" disabled selected>Wähle deine Klasse</option>
+            </select>
+
+            <!-- Weiter Button -->
+            <button type="submit">Weiter</button>
+        </form>
+    </div>
+</body>
+
+</html>

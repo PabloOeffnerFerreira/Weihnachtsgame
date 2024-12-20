@@ -1,0 +1,86 @@
+/* Allgemeines Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container für die Charaktererstellung */
+.creation-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Titel */
+.creation-container h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.creation-container label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* Eingabefelder */
+.creation-container input[type="text"],
+.creation-container select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.9em;
+    box-sizing: border-box;
+}
+
+/* Button */
+.creation-container button {
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.creation-container button:hover {
+    background-color: #5949b5;
+}
+
+/* Dropdown Styling */
+.creation-container select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fdfdfd;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 140'%3E%3Cpolygon points='70,105 105,35 35,35' fill='%236a5acd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px 12px;
+}
+
+/* Fokus-Effekte */
+.creation-container input:focus,
+.creation-container select:focus {
+    outline: none;
+    border-color: #6a5acd;
+    box-shadow: 0 0 5px rgba(106, 90, 205, 0.5);
+}
