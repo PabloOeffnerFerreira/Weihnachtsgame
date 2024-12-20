@@ -1,6 +1,3 @@
-alert("Script wird geladen!");
-document.body.innerHTML += "<p style='color: green;'>Script läuft korrekt!</p>";
-console.log("Script erfolgreich geladen!");
 import { races } from './Race.js';
 import { classes } from './Class.js';
 import { attributes, pointsPool, increaseAttribute, decreaseAttribute } from './Attributes.js';
