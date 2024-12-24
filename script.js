@@ -1,5 +1,5 @@
 import { races } from './Race.js';
-import { kSlasses } from './Class.js';
+import { klasses } from './Class.js';
 import { attributes, pointsPool, increaseAttribute, decreaseAttribute } from './Attributes.js';
 import { validateCharacter } from './Validation.js';
 
