@@ -3,6 +3,8 @@ import { classes } from './Class.js';
 import { attributes, pointsPool, increaseAttribute, decreaseAttribute } from './Attributes.js';
 import { validateCharacter } from './Validation.js';
 
+console.log(classes);
+
 export const character = {
     race: null,
     class: null,
