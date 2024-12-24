@@ -3,7 +3,7 @@ import { classes } from './Class.js';
 import { attributes, pointsPool, increaseAttribute, decreaseAttribute } from './Attributes.js';
 import { validateCharacter } from './Validation.js';
 
-console.log(classes);
+console.log(klasses);
 console.log(races);
 
 
@@ -39,20 +39,20 @@ if (raceDropdown) {
 }
 
 // Funktion zur Klassenauswahl
-export function selectClass(classId) {
-    const selectedClass = classes.find(c => c.id === classId);
-    if (!selectedClass) throw new Error("Ungültige Klasse ausgewählt.");
-    character.class = selectedClass;
-    console.log(`Klasse ausgewählt: ${selectedClass.displayName}`);
+export function selectKlass(klassId) {
+    const selectedKlass = klasses.find(k => k.id === klassId);
+    if (!selectedKlass) throw new Error("Ungültige Klasse ausgewählt.");
+    character.klass = selectedKlass;
+    console.log(`Klasse ausgewählt: ${selectedKlass.displayName}`);
 }
 
 // Klassen-Dropdown befüllen
-if (classDropdown) {
-    classes.forEach(cls => {
+if (klassDropdown) {
+    klasses.forEach(cls => {
         const option = document.createElement("option");
         option.value = cls.id;
         option.textContent = cls.displayName;
-        classDropdown.appendChild(option);
+        klassDropdown.appendChild(option);
     });
     document.body.innerHTML += "<p>Klassen-Dropdown gefüllt!</p>";
 } else {
@@ -61,15 +61,15 @@ if (classDropdown) {
 
 // Initialisierung der Dropdowns
 populateRaceDropdown();
-populateClassDropdown();
+populateKlassDropdown();
 
 // Event Listener für die Dropdowns hinzufügen
 raceDropdown.addEventListener('change', () => {
     selectRace(raceDropdown.value);
 });
 
-classDropdown.addEventListener('change', () => {
-    selectClass(classDropdown.value);
+klassDropdown.addEventListener('change', () => {
+    selectKlass(klassDropdown.value);
 });
 
 // Attributpunkte vergeben
