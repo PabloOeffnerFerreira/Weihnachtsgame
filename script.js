@@ -4,6 +4,8 @@ import { attributes, pointsPool, increaseAttribute, decreaseAttribute } from './
 import { validateCharacter } from './Validation.js';
 
 console.log(classes);
+console.log(races);
+
 
 export const character = {
     race: null,
