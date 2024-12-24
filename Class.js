@@ -27,5 +27,5 @@ export const classes = [
 
 // Funktion, um Klasse basierend auf der ID zu finden
 export function getClassById(classId) {
-    return classes.find(cls => cls.id === classId) || null;
+    return classes.find(class => class.id === classId) || null;
 }
