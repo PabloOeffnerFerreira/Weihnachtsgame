@@ -9,13 +9,13 @@ console.log(races);
 
 export const character = {
     race: null,
-    class: null,
+    klass: null,
     attributes: { ...attributes }, // Kopie der Attribute
 };
 
 // Dropdown-Elemente finden
 const raceDropdown = document.getElementById("race");
-const klassDropdown = document.getElementById("class");
+const klassDropdown = document.getElementById("klass");
 
 // Funktion zur Rassenauswahl
 export function selectRace(raceId) {
