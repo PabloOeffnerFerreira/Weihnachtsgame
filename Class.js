@@ -1,4 +1,4 @@
-export const classes = [
+export const klasses = [
     {
         id: "fighter",
         displayName: "Kämpfer",
@@ -26,6 +26,6 @@ export const classes = [
 ];
 
 // Funktion, um Klasse basierend auf der ID zu finden
-export function getClassById(classId) {
-    return classes.find(class => class.id === classId) || null;
+export function getKlassById(klassId) {
+    return klasses.find(klass => klass.id === klassId) || null;
 }
