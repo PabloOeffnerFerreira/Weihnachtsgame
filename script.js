@@ -15,7 +15,7 @@ export const character = {
 
 // Dropdown-Elemente finden
 const raceDropdown = document.getElementById("race");
-const classDropdown = document.getElementById("class");
+const klassDropdown = document.getElementById("class");
 
 // Funktion zur Rassenauswahl
 export function selectRace(raceId) {
